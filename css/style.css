@@ -1,0 +1,242 @@
+@import url(reset.css);
+
+body {
+  font-family: "Noto Serif TC", serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3.75em;
+  color: #573e1a;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #573e1a;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #573e1a;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* ---------------header start----------------------*/
+header {
+  border-bottom: 1px solid hsla(0, 0%, 84.7%, 0.6);
+  box-shadow: 0 0 5px hsl(0deg 0% 60% / 45%);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+
+.header_wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.header_wrapper img {
+  width: 202px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/* --------------------nav------------------------- */
+
+.header_wrapper ul {
+  float: right;
+  display: flex;
+  position: relative;
+}
+
+.header_wrapper a {
+  text-decoration: none;
+  display: block;
+  line-height: 90px;
+  margin: 0 25px;
+}
+
+.header_wrapper a h4:hover {
+  color: #c4a87e;
+}
+
+/* -------------------nav-list-------------------------- */
+
+.header_wrapper ol {
+  position: absolute;
+  display: none;
+  background-color: #573e1a;
+  opacity: 0.9;
+  box-shadow: 0 5px 8px #000;
+}
+
+.header_wrapper ol li h4 {
+  color: white;
+}
+
+.header_wrapper ol li h4:hover {
+  /* background-color: #c4a87e; */
+  color: #c4a87e;
+}
+
+.header_wrapper li:hover ol {
+  display: block;
+}
+
+/* ------------------------header end-------------------------*/
+
+/* ------------------------title start----------------------- */
+.title {
+  background-image: url(../img/title.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title_wrapper {
+  max-width: 1100px;
+  height: 343px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.title_wrapper h1 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  text-align: right;
+}
+/* ----------------------title end------------------------- *
+
+/* -----------------content_crumb start------------------------------ */
+
+.content_crumb {
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.content_crumb li {
+  margin: 0 2px 11px 0;
+}
+
+.content_crumb li a {
+  text-decoration: none;
+  color: #2e1c02;
+}
+
+.content_crumb li a:hover {
+  text-decoration: underline;
+}
+
+.content_crumb li:after {
+  content: ">";
+  padding: 0 0 0 2px;
+}
+
+.content_crumb li:last-child:after {
+  content: "";
+  padding: 0;
+}
+
+/* -----------------content_crumb end------------------------------ */
+
+/* --------------------footer start----------------------------- */
+
+footer {
+  background-color: #573e1a;
+}
+
+.footer_wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  padding-top: 40px;
+  border-bottom: 5px solid #c4a87e;
+}
+
+.section_left {
+  float: left;
+  display: flex;
+  /* justify-content: flex-end; */
+  /* border: 1px solid black; */
+}
+
+.section_left ul {
+  margin-bottom: 40px;
+}
+
+.section_left li {
+  color: white;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.section_left li i {
+  margin-right: 10px;
+}
+
+.section_left iframe {
+  margin-left: 85px;
+}
+
+.section_right {
+  float: right;
+  display: flex;
+
+  /* border: 1px solid black; */
+}
+
+.section_right ul {
+  /* border: 1px solid black; */
+  margin-right: 107px;
+}
+
+.section_right ul li {
+  margin-bottom: 8px;
+}
+
+.section_right a {
+  text-decoration: none;
+  color: white;
+}
+
+.section_right a:hover {
+  color: #c4a87e;
+}
+
+.section_right img {
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+.section_bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid #c4a87e;
+
+  color: white;
+  line-height: 58px;
+}
+
+/* --------------------footer end----------------------------- */
