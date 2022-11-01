@@ -1,5 +1,5 @@
 @import url(style.css);
-
+@import url(animation.css);
 
 /* -------------------------banner start-----------------------------*/
 .banner {
@@ -22,7 +22,7 @@
 }
 
 .banner_text h2 {
-  color: white;
+  color: #c4a87e;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
 }
@@ -31,14 +31,14 @@
   text-decoration: none;
   font-weight: bold;
   display: block;
-  border: 5px solid white;
+  border: 5px solid #c4a87e;
   border-style: double;
   width: 202px;
   height: 70px;
   line-height: 70px;
   text-align: center;
   font-size: 1.75em;
-  color: white;
+  color: #c4a87e;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   margin: 0 auto;
@@ -47,17 +47,10 @@
 }
 
 .banner a:hover {
-  color: #c4a87e;
-  border: 5px solid #c4a87e;
+  color: white;
+  border: 5px solid white;
   border-style: double;
 }
-
-/* .banner a h3{
-      font-size: 1.75em;
-      color: #573e1a;
-      padding-left: 950px;
-      padding-top: 80px;
-  } */
 
 /* ----------------------banner end--------------------*/
 
@@ -127,6 +120,14 @@
 .content_tea_bottom:hover {
   color: #c4a87e;
   border-bottom: 4px solid #c4a87e;
+}
+
+/* -----------content_space---------------------  */
+#slider {
+  width: 1114px;
+  height: 474px;
+  background-image: url(../img/pic1.png);
+  transition: background-image 0.5s;
 }
 
 /* -----------content_news--------------------- */

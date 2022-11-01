@@ -35,11 +35,6 @@
 
 /* ---------------content_left-------------------- */
 
-.content_left {
-  /* border: 1px solid #573e1a; */
-  /* padding-top: 30px; */
-  /* order: 2; */
-}
 .content_left h4 {
   font-weight: normal;
 }
@@ -145,7 +140,6 @@
   margin-left: 20px;
 }
 
-
 .content_right .partysize {
   width: 265px;
   height: 58px;
@@ -155,7 +149,7 @@
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  
+
   background-color: rgb(255, 255, 255, 0.5);
 }
 

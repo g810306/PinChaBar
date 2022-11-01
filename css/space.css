@@ -20,26 +20,6 @@
   margin-top: 35px;
 }
 
-/* -----------content_tea--------------------- */
-
-.content_tea ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 71px;
-  /* border: 1px solid #573e1a; */
-}
-
-.content_tea ul li {
-  margin: 0 50px;
-}
-
-.content_tea li a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-}
-
 /* -----------content_space--------------------- */
 
 .tabs {

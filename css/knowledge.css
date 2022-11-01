@@ -155,7 +155,7 @@
   margin-right: 8px;
 }
 
-.page li:nth-child(1){
+.page li:nth-child(1) {
   width: 30px;
   height: 37px;
   line-height: 37px;
@@ -167,7 +167,7 @@
   text-align: center;
 }
 
-.page li:nth-child(2){
+.page li:nth-child(2) {
   width: 30px;
   height: 37px;
   line-height: 37px;
@@ -178,8 +178,6 @@
   border-radius: 5px;
   text-align: center;
 }
-
-
 
 .page li a {
   display: block;
@@ -196,5 +194,5 @@
 
 .page li a:hover {
   color: white;
-  background-color: #c4a87e
+  background-color: #c4a87e;
 }
