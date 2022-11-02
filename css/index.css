@@ -25,11 +25,13 @@
   color: #c4a87e;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 50%);
+  letter-spacing: 5px;
 }
 
 .banner a {
   text-decoration: none;
-  font-weight: bold;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 50%);
   display: block;
   border: 5px solid #c4a87e;
   border-style: double;
@@ -42,14 +44,15 @@
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   margin: 0 auto;
-  margin-top: 120px;
-  margin-right: 70px;
+  margin-top: 100px;
+  /* margin-right: 70px; */
 }
 
 .banner a:hover {
   color: white;
   border: 5px solid white;
   border-style: double;
+  font-weight: bold;
 }
 
 /* ----------------------banner end--------------------*/

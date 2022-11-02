@@ -88,53 +88,49 @@
         <li><a href="reservation.html">預約品茶</a></li>
       </ul>
       <!-- content_left -->
-      <section class="content_wrapper2">
+
         <div class="content_left">
-          <h4>
+          <h2>預約注意事項</h2>
             <p>
-              【預約注意事項】 <br /><br />
+              【預約注意事項】<br />
               1.本店每日可預約時間至夜間7點為止<br />
               2.品茶吧接受30天內線上預訂。若需取消或更改預訂，請提前告知。<br />
               3.訂位將保留15分鐘，如逾時將視場狀況重新安排座位。品茶時間限時110分鐘。
               <br /><br />
               🍵低消<br />
-              每人最低消費為NTD$500元。
+              每人最低消費為NTD$500元，並需加收一成服務費。
               <br /><br />
               👨‍👩‍👧‍👦 團體活動<br />
-              6人以人上的團體須支付30%訂金，以轉帳或匯款方式支付。
-              <br /><br />
-              若需獨立私密空間之特殊活動或包場，請於營業時間來電:(02)1234-5678
+              6人以人上的團體須支付30%訂金，以轉帳或匯款方式支付。若需獨立私密空間之特殊活動或包場，請於營業時間來電。
               <br /><br />
               📒 其他注意事項<br />
-              所有價格以新台幣表示，並需加收一成服務費。<br />
               為了提供貴客完美品茶體驗與品質、尊重每位用心服務的員工及其他品茶客人，故品茶吧制定上述說明，謝謝您的體諒與配合。
             </p>
-          </h4>
         </div>
 
         <!-- content_right -->
+        <h2>填寫訂位資訊</h2>
         <div class="content_right">
-          <h4>
+          
+          
             <ul>
               <!-- input1 -->
               <li>
-                <p>訂位人姓名</p>
-                <input type="text" class="name" />
-                <span>
-                  <input type="radio" class="female" name="XXX" />
-                  小姐</span
-                >
-                <span><input type="radio" class="male" name="XXX" /> 先生</span>
+                <label><p>訂位人姓名</p>
+                <input type="text" class="name" placeholder="請輸入真實姓名"/></label>
+              <label>
+                  <input type="radio" class="female" name="XXX" /><span>小姐</span></label>
+                <label><input type="radio" class="male" name="XXX" /><span>先生</span></label>
               </li>
               <!-- input2 -->
               <li>
-                <p>手機號碼</p>
-                <input type="text" class="phone" />
+                <label><p>手機號碼</p>
+                <input type="text" class="phone" placeholder="請輸入手機號碼"/></label>
               </li>
               <!-- input3 -->
               <li>
-                <p>電子信箱</p>
-                <input type="text" class="email" />
+                <label><p>電子信箱</p>
+                <input type="text" class="email" placeholder="請輸入電子郵件地址"/></label>
               </li>
               <!-- input4 -->
               <li>
@@ -142,12 +138,12 @@
                   <!-- input4.1 -->
                   <li>
                     <p>品茶日期</p>
-                    <input type="date" class="date" style="color: #573e1a" />
+                    <input type="date" class="date"/>
                   </li>
                   <!-- input4.2 -->
                   <li>
                     <p>品茶時段</p>
-                    <input type="time" class="time" style="color: #573e1a" />
+                    <input type="time" class="time" value="11:00"/>
                   </li>
                 </ol>
                 <!-- input5 -->
@@ -157,7 +153,7 @@
                   <!-- input5.1 -->
                   <li>
                     <p>品茶人數</p>
-                    <select class="partysize" style="color: #573e1a">
+                    <select class="partysize">
                       <option>請選擇品茶人數</option>
                       <option>1位</option>
                       <option>2位</option>
@@ -170,7 +166,7 @@
                   <!-- input5.2 -->
                   <li>
                     <p>分店選擇</p>
-                    <select class="store" style="color: #573e1a">
+                    <select class="store">
                       <option>請選擇分店</option>
                       <option>台北本店</option>
                       <option>台中勤美店</option>
@@ -186,18 +182,20 @@
                   name=""
                   id=""
                   cols="30"
-                  rows="10"
+                  rows="3"
                   placeholder="有任何特殊需求嗎？可以先寫在這裡喔！（例如：行動不便、過敏）"
                 ></textarea>
+                <p></p>
               </li>
               <!-- input7 -->
-              <li>
+              <!-- <li>
                 <input type="submit" class="send" value="確認訂位" />
-              </li>
+              </li> -->
             </ul>
-          </h4>
+          
         </div>
-      </section>
+        <input type="submit" class="send" value="確認訂位" />
+
     </section>
     <!-- content end-->
 
