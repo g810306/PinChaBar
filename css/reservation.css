@@ -17,32 +17,36 @@
 h2 {
   /* border: 1px solid #573e1a; */
   margin: 35px auto 70px;
-  position: relative;
-}
-
-h2::after {
-  /* border: 1px solid #573e1a; */
-  content: "";
-  display: block;
-  width: 134px;
-  height: 133px;
-  background-image: url(../img/circle.svg);
-  position: absolute;
-  left: 484px;
-  top: -35px;
-  z-index: -1;
 }
 
 /* ---------------content_top-------------------- */
 
-.content_top p {
-  font-size: 16px;
+.content_top {
   border: 1px solid #c4a87e;
   border-radius: 10px;
   padding: 40px;
   color: #573e1a;
-  font-family: Noto Sans TC;
   margin-bottom: 70px;
+}
+
+.content_top p {
+  font-size: 16px;
+  color: #573e1a;
+  font-family: Noto Sans TC;
+  margin: 5px 0 15px 35px;
+}
+
+span,
+i {
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #d1a817;
+}
+
+i {
+  color: #d1a817;
 }
 
 /* ---------------content_bottom-------------------- */
@@ -51,14 +55,13 @@ h2::after {
   border: 1px solid #c4a87e;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .content_bottom ul {
   /* border: 1px solid #573e1a; */
   margin: 40px auto;
   display: inline-block;
-  text-align-last: left;
+  text-align: left;
   color: #573e1a;
 }
 
@@ -118,8 +121,10 @@ h2::after {
   width: 520px;
   border: 1px solid #c4a87e;
   padding-left: 12px;
+  padding-top: 12px;
   outline: 0;
-  background-color: #f6f6f6;
+  margin-bottom: 10px;
+
   font-size: 16px;
   border-radius: 5px;
 }
@@ -216,7 +221,7 @@ h2::after {
 }
 
 .send {
-  width: 100%;
+  width: 535px;
   height: 54px;
   background-color: #573e1a;
   color: white;
@@ -225,6 +230,7 @@ h2::after {
   font-size: 20px;
   border-radius: 5px;
   font-family: "Noto Serif TC", serif;
+  cursor: pointer;
 }
 
 /* ----------------------------content end------------------------------------------- */

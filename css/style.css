@@ -17,6 +17,19 @@ h2 {
   color: #573e1a;
   font-weight: bold;
   text-align: center;
+
+  background-image: url(../img/circle.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 266px;
+  line-height: 133px;
+}
+
+h3 {
+  font-size: 2em;
+  color: #573e1a;
+  font-weight: bold;
+  text-align: center;
 }
 
 h4 {

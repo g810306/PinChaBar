@@ -60,7 +60,7 @@
 
 /*  ------------content_tea--------------- */
 
-.content_tea ul a:hover{
+.content_tea ul img:hover{
     animation: wobble-hor-top 0.8s both;
 }
 
