@@ -134,7 +134,7 @@
 
 /* --------------------RWD start----------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 414px) {
   .header_wrapper ul {
     /* display: none; */
   }

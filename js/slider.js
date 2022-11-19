@@ -2,7 +2,8 @@
 
 let modals = document.getElementsByClassName("modal");
 let modalOpenBtn = document.getElementsByClassName("modalOpenBtn");
-let currentModal = null;
+// let currentModal = null;
+ let currentModal;
 
 // Function to open modal by id
 function openModal(id) {
@@ -14,6 +15,21 @@ function openModal(id) {
     }
   }
 }
+
+// sayHi();
+
+// // expression
+// const sayHi = function(){
+//   console.log('hi');
+// }
+
+
+
+// // direction
+// function sayHi2 (){
+//   console.log('hi');
+// }
+
 
 // When the user clicks the button, open modal with the same id
 modalOpenBtn.onclick = function () {
@@ -59,9 +75,8 @@ $(".nav_wrapper").on("click", function(e){
 
 
 
-  $(".has-children").on("click", function () {
+  $(".has-children").on("click", function (e) {
     $("ol").removeClass("children").addClass("children_mobile");
-    
     $(".children_mobile").slideToggle("slow", "swing");
     $(".icon-arrow").toggleClass("open");
 

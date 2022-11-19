@@ -107,3 +107,61 @@ margin: 0 auto;
 }
 
 /* ----------------------content end------------------------- */
+
+/* --------------------RWD start----------------------------- */
+
+@media screen and (max-width: 414px) {
+
+  .content_wrapper p {
+width: 100%;
+  }
+  
+
+
+  /* -------content top-------------- */
+
+.content_top ul {
+  flex-direction: column;
+  margin: 0;
+}
+
+.content_top img {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.content_top .top_block{
+  display: none;
+}
+
+
+
+
+
+/* -------content bottom-------------- */
+.content_bottom ul {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_bottom img {
+  width: 80%;
+  
+  
+
+}
+
+.content_bottom li:nth-child(1) {
+  width: 50%;
+  order: 0;
+}
+
+.content_bottom .bottom_block{
+  display: none;
+}
+
+
+}
+

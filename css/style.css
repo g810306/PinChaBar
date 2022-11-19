@@ -265,7 +265,7 @@ footer {
 
 /* --------------------RWD start----------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 414px) {
   body {
     /* font-size: 10px; */
   }
@@ -443,6 +443,7 @@ footer {
   }
 
   .header_wrapper .children_mobile {
+    
     border-top: #c4a87e 1px solid;
     border-bottom: #c4a87e 1px solid;
     background-color: rgba(87, 62, 26, 0.5);

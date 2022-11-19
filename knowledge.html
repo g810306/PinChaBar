@@ -24,25 +24,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="overlay"></div>
     <!-- header start-->
     <header>
-        <div class="header_wrapper">
-            <a href="index.html"><img src="img/pincha.svg" alt=""></a>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            <ul>
-                <li><a href="about.html"><h4>關於品茶吧</h4></a></li>
-                <li>
-                    <a href="tea.html"><h4>服務項目</h4></a>
-                    <ol>
-                        <li><a href="tea.html"><h4>台灣紅茶</h4></a></li>
-                        <li><a href="space.html"><h4>品茶空間</h4></a></li>
-                    </ol>
-                </li> 
-                <li><a href="reservation.html"><h4>預約品茶</h4></a></li>
-                <li><a href="news.html"><h4>最新消息</h4></a></li>
-                <li><a href="knowledge.html"><h4>小茶識</h4></a></li>
-            </ul>
+      <div class="header_wrapper">
+        <a href="index.html"><img src="img/pincha.svg" alt="" /></a>
+  
+        <div class="nav_wrapper">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
         </div>
+  
+        <nav class="mobile-menu">
+          <ul>
+            <li>
+              <a href="about.html">
+                <h4>關於品茶吧</h4>
+              </a>
+            </li>
+            <li class="has-children">
+              <a href="#">
+                <h4>服務項目</h4><span class="icon-arrow"></span>
+              </a>
+              <ol class="children">
+                <li>
+                  <a href="tea.html">
+                    <h4>台灣紅茶</h4>
+                  </a>
+                </li>
+                <li>
+                  <a href="space.html">
+                    <h4>品茶空間</h4>
+                  </a>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="reservation.html">
+                <h4>預約品茶</h4>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <h4>最新消息</h4>
+              </a>
+            </li>
+            <li>
+              <a href="knowledge.html">
+                <h4>小茶識</h4>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </div>
     </header>
     <!-- header end-->
 
