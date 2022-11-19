@@ -22,7 +22,7 @@ modalOpenBtn.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal or the X, close
-window.ontouchstart = function (event) {
+window.ontouchend = function (event) {
   if (
     event.target == currentModal ||
     event.target.getAttribute("class") == "modalClose"
