@@ -195,8 +195,9 @@
 
 /* -------------------------banner start-----------------------------*/
 .banner {
-  background-position: right center;
-  background-size: cover;
+  background-position: 60% 40%;
+  
+  background-size: 200%;
   height: 387px;
 
 }
@@ -218,8 +219,9 @@
 
 }
 .banner_text h2{ 
-  font-size: 1.25rem;
-  display: none;
+  font-size: 1.5rem;
+  margin-left: 60px;
+  
   
 }
 
@@ -232,8 +234,8 @@
   line-height: 50px;
 
   margin-left: 200px;
-  margin-top: 100px;
 }
+  
 
 
 
@@ -261,7 +263,7 @@
 
 /* -----------content_space---------------------  */
 #slider {
-  width: 414px;
+  width: auto;
   height: 277px;
   background-position: center center;
   background-size: cover;
@@ -281,3 +283,4 @@
 
 }
 /* -------------------content end----------------------- */
+

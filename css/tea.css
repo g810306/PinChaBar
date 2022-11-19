@@ -2,42 +2,198 @@
 @import url(animation.css);
 
 .header_wrapper ul li:nth-child(2) h4 {
-    color: #c4a87e;
-  }
-  
-.header_wrapper ol li:last-child h4{
+  color: #c4a87e;
+}
+
+.header_wrapper ol li:last-child h4 {
   color: white;
 }
 
-.header_wrapper ol li:last-child h4:hover{
+.header_wrapper ol li:last-child h4:hover {
   color: #c4a87e;
 }
 
 .content_wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-    /* border: 1px solid #573e1a; */
-    margin-bottom: 120px;
-    margin-top: 35px;
-  }
+  max-width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid #573e1a; */
+  margin-bottom: 120px;
+  margin-top: 35px;
+}
 
 /* -----------content_tea--------------------- */
 
-  .content_tea ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 71px;
+.content_tea ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 71px;
+  /* border: 1px solid #573e1a; */
+}
+
+.content_tea ul li {
+  margin: 0 50px;
+}
+
+.content_tea li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.content_tea li button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.content_tea li button h4 {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.75em;
+}
+
+/* --------------------modal------------------------- */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /* padding-top: 100px; */
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 700px;
+  border-radius: 10px;
+
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 100;
+}
+
+.modalContent .tea_info {
+  float: right;
+  margin: 20px;
+  width: 40%;
+  margin-right: 50px;
+}
+
+.modalContent .tea_text {
+  padding: 10px;
+  border: 1px solid #c4a87e;
+  border-radius: 10px;
+}
+
+.modalContent h4 {
+  color: #573e12;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modalContent h5 {
+  color: #c4a87e;
+  text-align: left;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.modalContent p {
+  color: #573e12;
+  text-align: left;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.modalClose {
+  color: #573e12;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalClose:hover,
+.modalClose:focus {
+  color: #c4a87e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* --------------------RWD start----------------------------- */
+
+@media screen and (max-width: 428px) {
+  .header_wrapper ul {
+    /* display: none; */
+  }
+
+  .content_wrapper {
+    /* margin: 0 auto; */
     /* border: 1px solid #573e1a; */
   }
-  
+
+  .content_tea ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
   .content_tea ul li {
-    margin: 0 50px;
+    margin: 0;
+    margin-bottom: 30px;
   }
-  
-  .content_tea li a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
+
+  .modalContent {
+    width: 70%;
   }
-  
+
+  .modalContent img {
+    margin: 0 auto;
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  .modalContent .tea_info {
+    float: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .modalContent h4 {
+    margin-bottom: 20px;
+  }
+
+  .modalContent .tea_text {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    background-position: 65% 35%;
+  }
+
+  .title_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 350px;
+    height: 300px;
+  }
+
+  .title_wrapper h1 {
+    font-size: 2.5rem;
+    grid: auto;
+  }
+}

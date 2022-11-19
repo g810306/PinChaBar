@@ -45,3 +45,27 @@
 }
 
 /* -------------------content end----------------------- */
+
+
+
+/* --------------------RWD start----------------------------- */
+
+@media screen and (max-width: 428px) {
+
+/* -----------content_news--------------------- */
+
+
+
+.content_news ul {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+
+.content_news ul li {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+}
