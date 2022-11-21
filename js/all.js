@@ -1,3 +1,52 @@
+
+var btn = $("#button");
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});
+
+// --------------------reservation alert and confirm start------------------------------//
+
+$(document).ready(function () {
+  $(".send").click(function (e) {
+    if ($(".name").val() == "") {
+      alert("訂位人姓名不可留空");
+      eval("document.form1['name'].focus()");
+      event.preventDefault();
+    } else if ($(".phone").val() == "") {
+      alert("訂位人手機號碼不可留空");
+      eval("document.form1['phone'].focus()");
+      event.preventDefault();
+    } else if ($(".date").val() == "") {
+      alert("請選擇品茶日期");
+      eval("document.form1['date'].focus()");
+      event.preventDefault();
+    } else if ($(".store").val() == "請選擇分店") {
+      alert("請選擇分店");
+      eval("document.form1['store'].focus()");
+      event.preventDefault();
+    } else if ($("select.partisize").val() === "請選擇品茶人數") {
+      alert("請選擇品茶人數");
+      eval("document.form1['partysize'].focus()");
+      event.preventDefault();
+    } else {
+      event.preventDefault();
+      swal("訂位已完成", "我們將發送訂位確認簡訊通知到您的手機", "success");
+    }
+  });
+});
+
+// --------------------reservation alert and confirm end------------------------------//
+
 // --------------------tea_modal start------------------------------//
 
 let modals = document.getElementsByClassName("modal");
@@ -58,16 +107,16 @@ window.onclick = function (event) {
   });
 
   //次選單點擊展開
-  if($(window).width() < 500){  $(".has-children").on("click", function (e) {
-    $("ol").removeClass("children").addClass("children_mobile");
-    $(".children_mobile").slideToggle("slow", "swing");
-    $(".icon-arrow").toggleClass("open");
-  });}
-
+  if ($(window).width() < 500) {
+    $(".has-children").on("click", function (e) {
+      $("ol").removeClass("children").addClass("children_mobile");
+      $(".children_mobile").slideToggle("slow", "swing");
+      $(".icon-arrow").toggleClass("open");
+    });
+  }
 })();
 
 //--------------------mobile_menu end------------------------------//
-
 
 //--------------------space_tab start------------------------------//
 
@@ -98,11 +147,12 @@ $("#tabs-nav li").click(function () {
 //--------------------index_slider------------------------------//
 
 let imgs = [
-  "../img/pic1.png",
-  "../img/pic2.png",
-  "../img/pic3.png",
-  "../img/pic4.png",
-  "../img/pic5.png",
+  "../img/pic3.jpg",
+  "../img/pic2.jpg",
+  "../img/pic1.jpg",
+  "../img/pic4.jpg",
+  "../img/pic5.jpg",
+  "../img/pic6.jpg"
 ];
 let slider = document.getElementById("slider");
 let i = 0;
@@ -112,8 +162,7 @@ setInterval(function () {
   if (i == imgs.length) {
     i = 0;
   }
-}, 2000);
-
+}, 3000);
 
 // sayHi();
 

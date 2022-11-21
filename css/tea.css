@@ -155,6 +155,8 @@
     margin-bottom: 30px;
   }
 
+  /* --------------------modal------------------------- */
+
   .modalContent {
     width: 70%;
   }
@@ -179,21 +181,5 @@
 
   .modalContent .tea_text {
     margin-bottom: 20px;
-  }
-
-  .title {
-    background-position: 65% 35%;
-  }
-
-  .title_wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-width: 350px;
-    height: 300px;
-  }
-
-  .title_wrapper h1 {
-    font-size: 2.5rem;
-    grid: auto;
   }
 }

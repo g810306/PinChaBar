@@ -117,9 +117,36 @@
 /* --------------------RWD start----------------------------- */
 
 @media screen and (max-width: 414px) {
+  #tabs-nav {
+    flex-wrap: nowrap;
+  }
 
+  h2 {
+    width: 100%;
+    background-size: contain;
+    /* margin: 0; */
 
-  .bottom{
+    font-size: 2rem;
+  }
+
+  /* ---------------content_picture---------------------- */
+
+  .top {
+  }
+
+  .top img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .top li {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  /* ---------------content_map---------------------- */
+
+  .bottom {
     flex-direction: column;
   }
 
@@ -128,14 +155,13 @@
     width: 80%;
   }
 
-  .bottom ol{
+  .bottom ol {
     width: 80%;
   }
 
-  iframe{
+  iframe {
     width: auto;
     margin-left: 40px;
     margin-top: 60px;
   }
-
 }

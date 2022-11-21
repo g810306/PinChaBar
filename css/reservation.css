@@ -49,7 +49,8 @@ i {
   color: #d1a817;
 }
 
-.fa-phone, .fa-regular{
+.fa-phone,
+.fa-regular {
   color: white;
 }
 
@@ -237,11 +238,97 @@ i {
   cursor: pointer;
 }
 
-/* ----------------------------content end------------------------------------------- */
+.swal2-modal .swal2-title {
+  background-image: none;
+  width: auto;
+  line-height: normal;
+}
 
+/* ----------------------------content end------------------------------------------- */
 
 /* --------------------RWD start----------------------------- */
 
 @media screen and (max-width: 414px) {
-  
+  /* -----------------content_top------------------ */
+  .contnet_top {
+    /* width: auto; */
+
+    /* margin: 0; */
+    /* padding: 0; */
+    /* margin: 0 auto; */
+  }
+
+  .content_top p {
+    /* width: auto; */
+    /* margin: 0; */
+  }
+
+  .content_top span,
+  i {
+    /* width: auto; */
+    /* margin: 0; */
+  }
+
+  /* -----------------content_bottom------------------ */
+
+  .content_bottom {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .content_bottom ul {
+    width: 80%;
+  }
+
+  .content_bottom li {
+    width: auto;
+  }
+
+  .content_bottom ol {
+    flex-direction: column;
+  }
+
+  .content_bottom ol .time,
+  .content_bottom ol .date {
+    width: 85%;
+  }
+
+  .content_bottom ol .partysize,
+  .content_bottom ol .store {
+    width: 100%;
+  }
+
+  .content_bottom ol .time,
+  .content_bottom ol .store {
+    margin-left: 0;
+  }
+
+  .content_bottom ol li:last-child p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content_bottom .name {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .content_bottom span {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .female {
+    margin-left: 0;
+  }
+
+  .content_bottom .phone,
+  .content_bottom .email,
+  .content_bottom textarea {
+    width: 90%;
+  }
+
+  .send {
+    width: 100%;
+  }
 }
