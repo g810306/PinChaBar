@@ -94,6 +94,10 @@ header {
   color: #c4a87e;
 }
 
+.has-children{
+  /* pointer-events: none; */
+}
+
 /* -------------------nav-list-------------------------- */
 
 .header_wrapper .children {
@@ -119,7 +123,7 @@ header {
 }
 
 .header_wrapper li:hover .children {
-  display: block;
+  /* display: block; */
 }
 
 /* ------------------------header end-------------------------*/
@@ -451,7 +455,11 @@ footer {
   }
 
   .has-children:hover {
-    cursor: hand;
+    /* cursor: hand; */
+  }
+
+  .header_wrapper ol li h4 {
+    font-size: 1rem;
   }
 
   .mobile-menu .children_mobile li:first-child {
@@ -573,5 +581,15 @@ footer {
   .section_right {
     order: 1;
     margin: 0 auto;
+  }
+
+
+
+
+}
+
+@media (min-width: 500px){
+  .header_wrapper li:hover .children {
+    display: block;
   }
 }

@@ -1,9 +1,9 @@
-// --------------------tea_modal------------------------------//
+// --------------------tea_modal start------------------------------//
 
 let modals = document.getElementsByClassName("modal");
 let modalOpenBtn = document.getElementsByClassName("modalOpenBtn");
 // let currentModal = null;
- let currentModal;
+let currentModal;
 
 // Function to open modal by id
 function openModal(id) {
@@ -15,21 +15,6 @@ function openModal(id) {
     }
   }
 }
-
-// sayHi();
-
-// // expression
-// const sayHi = function(){
-//   console.log('hi');
-// }
-
-
-
-// // direction
-// function sayHi2 (){
-//   console.log('hi');
-// }
-
 
 // When the user clicks the button, open modal with the same id
 modalOpenBtn.onclick = function () {
@@ -47,10 +32,11 @@ window.onclick = function (event) {
   }
 };
 
+// --------------------tea_modal end------------------------------//
 
+//--------------------mobile_menu start------------------------------//
 
-//--------------------mobile_menu------------------------------//
-
+//點擊漢堡顯示menu
 (function () {
   $(".hamburger-menu").on("click", function () {
     $(".bar").toggleClass("animate");
@@ -59,57 +45,55 @@ window.onclick = function (event) {
     return false;
   });
 
-// menu外的區域
-$(".overlay").on("click", function(){
-  $(".mobile-menu").removeClass("active");
-  $(".bar").removeClass("animate");
-  $(".overlay").removeClass("active");
+  // menu外的區域點擊關閉
+  $(".overlay").on("click", function () {
+    $(".mobile-menu").removeClass("active");
+    $(".bar").removeClass("animate");
+    $(".overlay").removeClass("active");
+  });
 
+  // 點擊menu區域 ，不會關掉
+  $(".nav_wrapper").on("click", function (e) {
+    e.stopPropagation();
+  });
 
-});
-
-// 點擊.nav_wrapper區域 ，不會關掉
-$(".nav_wrapper").on("click", function(e){
-  e.stopPropagation();
-});
-
-
-
-  $(".has-children").on("click", function (e) {
+  //次選單點擊展開
+  if($(window).width() < 500){  $(".has-children").on("click", function (e) {
     $("ol").removeClass("children").addClass("children_mobile");
     $(".children_mobile").slideToggle("slow", "swing");
     $(".icon-arrow").toggleClass("open");
+  });}
 
-
-
-
-    
-  });
 })();
 
+//--------------------mobile_menu end------------------------------//
+
+
+//--------------------space_tab start------------------------------//
 
 /*tab 收合*/
 
 // Show the first tab and hide the rest
-$('#tabs-nav li:first-child').addClass('active');
-$('.tab-content').hide();
-$('.tab-content:first').show();
+$("#tabs-nav li:first-child").addClass("active");
+$(".tab-content").hide();
+$(".tab-content:first").show();
 
 // Click function
-$('#tabs-nav li').click(function(){
-  $('#tabs-nav li').removeClass('active');
-  $(this).addClass('active');
-  $('#tabs-nav li h2').css('color', '#573e12');
-  $('.active h2').css('color', '#c4a87e');
+$("#tabs-nav li").click(function () {
+  $("#tabs-nav li").removeClass("active");
+  $(this).addClass("active");
+  $("#tabs-nav li h2").css("color", "#573e12");
+  $(".active h2").css("color", "#c4a87e");
   //console.log(this);
-  $('.tab-content').hide();
-  
-  var activeTab = $(this).find('a').attr('href');
+  $(".tab-content").hide();
+
+  var activeTab = $(this).find("a").attr("href");
   $(activeTab).fadeIn();
   //console.log(activeTab);
   return false;
 });
 
+//--------------------space_tab end------------------------------//
 
 //--------------------index_slider------------------------------//
 
@@ -131,3 +115,14 @@ setInterval(function () {
 }, 2000);
 
 
+// sayHi();
+
+// // expression
+// const sayHi = function(){
+//   console.log('hi');
+// }
+
+// // direction
+// function sayHi2 (){
+//   console.log('hi');
+// }

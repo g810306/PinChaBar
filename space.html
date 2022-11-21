@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/space.css" />
   <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <link rel="stylesheet" href="./lightbox2-2.11.3/dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <title>品茶空間</title>
 
   <!-- font -->
@@ -37,52 +42,52 @@
       <a href="index.html"><img src="img/pincha.svg" alt="" /></a>
 
       <div class="nav_wrapper">
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-      </div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
 
-      <nav class="mobile-menu">
-        <ul>
-          <li>
-            <a href="about.html">
-              <h4>關於品茶吧</h4>
-            </a>
-          </li>
-          <li class="has-children">
-            <a href="#">
-              <h4>服務項目</h4><span class="icon-arrow"></span>
-            </a>
-            <ol class="children">
-              <li>
-                <a href="tea.html">
-                  <h4>台灣紅茶</h4>
-                </a>
-              </li>
-              <li>
-                <a href="space.html">
-                  <h4>品茶空間</h4>
-                </a>
-              </li>
-            </ol>
-          </li>
-          <li>
-            <a href="reservation.html">
-              <h4>預約品茶</h4>
-            </a>
-          </li>
-          <li>
-            <a href="news.html">
-              <h4>最新消息</h4>
-            </a>
-          </li>
-          <li>
-            <a href="knowledge.html">
-              <h4>小茶識</h4>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <nav class="mobile-menu">
+          <ul>
+            <li>
+              <a href="about.html">
+                <h4>關於品茶吧</h4>
+              </a>
+            </li>
+            <li class="has-children">
+              <a href="#">
+                <h4>服務項目</h4><span class="icon-arrow"></span>
+              </a>
+              <ol class="children">
+                <li>
+                  <a href="tea.html">
+                    <h4>台灣紅茶</h4>
+                  </a>
+                </li>
+                <li>
+                  <a href="space.html">
+                    <h4>品茶空間</h4>
+                  </a>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="reservation.html">
+                <h4>預約品茶</h4>
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                <h4>最新消息</h4>
+              </a>
+            </li>
+            <li>
+              <a href="knowledge.html">
+                <h4>小茶識</h4>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- header end-->
@@ -129,7 +134,7 @@
           </ul>
 
           <ul class="bottom">
-            <li>
+            <li class="animate__animated animate__zoomIn">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.847765573804!2d121.5606384!3d25.043848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc82b0f87ff7df9dc!2z5p2-5bGx5paH5Ym15ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1667128033871!5m2!1szh-TW!2stw"
                 width="560" height="312" style="border: 0" allowfullscreen="" loading="lazy"
@@ -156,13 +161,16 @@
         <div id="tab2" class="tab-content">
           <h2>台中勤美店</h2>
           <ul class="top">
-            <li><img src="img/space/tc1.png" alt="" /></li>
-            <li><img src="img/space/tc2.png" alt="" /></li>
-            <li><img src="img/space/tc3.png" alt="" /></li>
+            <li><a class="example-image-link" href="img/space/tcb1.jpg" data-lightbox="example-set"
+                data-title="Taichung"><img class="example-image" src="img/space/tc1.jpg" alt="" /></a></li>
+            <li><a class="example-image-link" href="img/space/tcb2.jpg" data-lightbox="example-set"
+                data-title="Taichung"><img class="example-image" src="img/space/tc2.jpg" alt="" /></a></li>
+            <li><a class="example-image-link" href="img/space/tcb3.jpg" data-lightbox="example-set"
+                data-title="Taichung"><img class="example-image" src="img/space/tc3.jpg" alt="" /></a></li>
           </ul>
 
           <ul class="bottom">
-            <li>
+            <li class="animate__animated animate__zoomIn">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14562.328983377582!2d120.6640025!3d24.1513049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f9d8ebd38727566!2z5Yuk576OIOiqoOWTgee2oOWckumBkw!5e0!3m2!1szh-TW!2stw!4v1667130323154!5m2!1szh-TW!2stw"
                 width="560" height="312" style="border: 0" allowfullscreen="" loading="lazy"
@@ -270,7 +278,12 @@
 
 
 
-  <script src="js/slider.js"></script>
+  <script src="js/all.js"></script>
+  <script src="./lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

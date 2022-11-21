@@ -113,3 +113,29 @@
   margin-top: 5px;
   font-weight: normal;
 }
+
+/* --------------------RWD start----------------------------- */
+
+@media screen and (max-width: 414px) {
+
+
+  .bottom{
+    flex-direction: column;
+  }
+
+  .bottom > li:nth-child(1) {
+    order: 2;
+    width: 80%;
+  }
+
+  .bottom ol{
+    width: 80%;
+  }
+
+  iframe{
+    width: auto;
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+
+}

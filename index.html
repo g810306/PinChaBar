@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/index.css" />
   <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>品茶吧</title>
 
   <!-- font -->
@@ -105,17 +106,17 @@
     <div class="content_tea">
       <h2>嚴選台灣紅茶</h2>
       <ul>
-        <li>
+        <li data-aos="zoom-out" data-aos-duration="3000" data-aos-anchor-placement ="center-bottom">
           <a href="tea.html"><img src="img/tea/tea1.png" alt="" />
             <h4>蜜香紅茶</h4>
           </a>
         </li>
-        <li>
+        <li data-aos="zoom-out" data-aos-duration="3000" data-aos-anchor-placement ="center-bottom">
           <a href="tea.html"><img src="img/tea/tea2.png" alt="" />
             <h4>紅韻紅茶</h4>
           </a>
         </li>
-        <li>
+        <li data-aos="zoom-out" data-aos-duration="3000" data-aos-anchor-placement ="center-bottom">
           <a href="tea.html"><img src="img/tea/tea3.png" alt="" />
             <h4>紅玉紅茶</h4>
           </a>
@@ -130,21 +131,21 @@
     <div class="content_news">
       <h2>最新消息</h2>
       <ul>
-        <li>
+        <li data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement ="center-bottom">
           <a href="">
             <img src="img/news/pic1.png" alt="" />
             <h5>2022-10-18</h5>
             <h4>新品上市 花蓮蜜香紅茶</h4>
           </a>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement ="center-bottom">
           <a href="">
             <img src="img/news/pic2.png" alt="" />
             <h5>2022-10-12</h5>
             <h4>SGS檢驗合格 讓您安心品茶</h4>
           </a>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor-placement ="center-bottom">
           <a href="">
             <img src="img/news/pic3.png" alt="" />
             <h5>2022-10-01</h5>
@@ -197,8 +198,11 @@
     </div>
   </footer>
   <!-- footer end-->
-
-  <script src="js/slider.js"></script>
+  <script src="js/all.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

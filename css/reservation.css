@@ -36,7 +36,7 @@ h2 {
   margin: 5px 0 15px 35px;
 }
 
-span,
+.content_top span,
 i {
   font-family: Noto Sans TC;
   font-size: 16px;
@@ -47,6 +47,10 @@ i {
 
 i {
   color: #d1a817;
+}
+
+.fa-phone, .fa-regular{
+  color: white;
 }
 
 /* ---------------content_bottom-------------------- */
@@ -234,3 +238,10 @@ i {
 }
 
 /* ----------------------------content end------------------------------------------- */
+
+
+/* --------------------RWD start----------------------------- */
+
+@media screen and (max-width: 414px) {
+  
+}

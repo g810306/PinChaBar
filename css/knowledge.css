@@ -26,10 +26,10 @@
   text-align: center;
 }
 
-.content_wrapper .more:hover {
+/* .content_wrapper .more:hover {
   color: #573e1a;
   border: #573e1a 1px solid;
-}
+} */
 
 /* ---------------------------------------content start----------------------------------------- */
 
@@ -90,9 +90,9 @@
   color: #c4a87e;
 }
 
-.main h4 a:hover {
+/* .main h4 a:hover {
   color: #573e1a;
-}
+} */
 
 .main p {
   color: #2e1c02;
@@ -194,7 +194,47 @@
   color: #573e1a;
 }
 
-.page li a:hover {
+/* .page li a:hover {
   color: white;
   background-color: #c4a87e;
+} */
+
+/* --------------------RWD start----------------------------- */
+
+@media screen and (max-width: 414px) {
+  .link {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main li {
+    margin-top: 0;
+  }
+
+  .main img {
+    width: 100%;
+  }
+
+  .list .more {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .page li a:hover {
+    color: #573e1a;
+    background-color: white;
+  }
+
+  .main h4 a:hover {
+    color: #573e1a;
+  }
+
+  .content_wrapper .more:hover {
+    color: #573e1a;
+    border: #573e1a 1px solid;
+  }
 }
