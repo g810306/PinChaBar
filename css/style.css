@@ -58,7 +58,7 @@ h5 {
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
+  z-index: 1;
 }
 #button::after {
   content: "\f077";
@@ -339,7 +339,7 @@ footer {
   .header_wrapper ul {
     float: none;
     flex-direction: column;
-    background-color: rgba(87, 62, 26, 0.5);
+    background-color: rgba(87, 62, 26, 0);
     /* display: flex;
     position: relative; */
     width: 100%;
@@ -366,10 +366,7 @@ footer {
 
   .hamburger-menu {
     float: right;
-    padding-top: 35px;
-    padding-bottom: 50px;
-    padding-left: 35px;
-    /* margin-right: 15px; */
+    padding: 35px 15px 50px 35px;
   }
 
   .bar,
@@ -456,7 +453,7 @@ footer {
   .mobile-menu {
     /* float: none;
     flex-direction: column; */
-    background-color: rgba(87, 62, 26, 0.8);
+    background-color: rgba(87, 62, 26, 0.9);
     /* display: flex;
     position: relative; */
     width: 100%;
