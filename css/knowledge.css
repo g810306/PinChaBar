@@ -221,6 +221,10 @@
   .list .more {
     display: none;
   }
+
+  .list h4 a {
+    width: 90%;
+  }
 }
 
 @media (min-width: 500px) {

@@ -1,3 +1,4 @@
+// --------------------back to top start------------------------------//
 
 var btn = $("#button");
 
@@ -13,6 +14,8 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
+
+// --------------------back to top end------------------------------//
 
 // --------------------reservation alert and confirm start------------------------------//
 
@@ -30,13 +33,13 @@ $(document).ready(function () {
       alert("請選擇品茶日期");
       eval("document.form1['date'].focus()");
       event.preventDefault();
+    } else if ($(".partysize").val() === "請選擇品茶人數") {
+      alert("請選擇品茶人數");
+      eval("document.form1['partysize'].focus()");
+      event.preventDefault();
     } else if ($(".store").val() == "請選擇分店") {
       alert("請選擇分店");
       eval("document.form1['store'].focus()");
-      event.preventDefault();
-    } else if ($("select.partisize").val() === "請選擇品茶人數") {
-      alert("請選擇品茶人數");
-      eval("document.form1['partysize'].focus()");
       event.preventDefault();
     } else {
       event.preventDefault();
@@ -152,7 +155,7 @@ let imgs = [
   "../img/pic1.jpg",
   "../img/pic4.jpg",
   "../img/pic5.jpg",
-  "../img/pic6.jpg"
+  "../img/pic6.jpg",
 ];
 let slider = document.getElementById("slider");
 let i = 0;
